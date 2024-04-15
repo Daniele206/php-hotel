@@ -1,8 +1,8 @@
 <?php
 
-$only_park = true;
+$only_park = $_GET['only_park'];
 
-$min_vote = 2;
+$min_vote = $_GET['min_vote'];
 
 $hotels = [
   [
@@ -55,11 +55,11 @@ $hotels = [
 </head>
 <body class="bg-primary my_heigt-100">
   <h1 class="text-center fw-bold pt-5">Hotel</h1>
-  <div class="container d-flex flex-wrap align-items-center h-75">
+  <div class="container d-flex flex-wrap align-items-center justify-content-center h-75">
     <?php
     foreach($hotels as $hotel): 
-    if($only_park === $hotel['parking'] || $only_park === false):
-    if($hotel['vote'] >= $min_vote):
+    if($only_park == $hotel['parking'] || $only_park == 'false'):
+    if($hotel['vote'] >= $min_vote || $min_vote == 'false'):
     ?>
       <div class="card mx-5" style="width: 18rem;">
         <div class="card-body">

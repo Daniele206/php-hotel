@@ -29,3 +29,4 @@ Se non viene specificato nessun filtro, visualizzare come in precedenza tutti gl
 3. Dare un minimo di style.
 4. Aggiunger i due parametri per filtrare gli hotel con due if.
 5. Aggiungere un form inizziale che chiede se si vogliono visualizzare tutti gli hotel o se si vuole filtrarli in base a se hanno o no il parcheggio e se si vuole inserire un voto minimo da rispettare.
+6. Collegare il form alle variabili della seconda pagina con un metodo GET.
