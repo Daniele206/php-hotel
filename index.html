@@ -8,16 +8,17 @@
   <title>PHP-Hotel</title>
 </head>
 <body class="bg-primary my_heigt-100">
-  <h1 class="text-center fw-bold pt-5">Hotel</h1>
+  <h1 class="text-center fw-bold py-5">Hotel</h1>
   <div class="container h-75">
     <form action="reuslts.php" method="GET">
-      <select class="form-select" aria-label="Default select example" name="only_park">
-        <option selected value="false">Filtro presenza parcheggio</option>
+      <h3>Filtro hotels:</h3>
+      <select class="form-select mb-3" aria-label="Default select example" name="only_park">
+        <option selected value="false">Tutti gli hotel</option>
         <option value="true">Solo hotel con parcheggio</option>
-        <option value="false">Tutti gli hotel</option>
       </select>
-      <select class="form-select" aria-label="Default select example" name="min_vote">
-        <option selected value="false">Filtro voto minimo</option>
+      <h3>Valutazione minima:</h3>
+      <select class="form-select mb-5" aria-label="Default select example" name="min_vote">
+        <option selected value="false">0/5</option>
         <option value="1">1/5</option>
         <option value="2">2/5</option>
         <option value="3">3/5</option>
