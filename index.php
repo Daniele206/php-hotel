@@ -1,5 +1,9 @@
 <?php
 
+$only_park = true;
+
+$min_vote = 2;
+
 $hotels = [
   [
       'name' => 'Hotel Belvedere',
@@ -52,21 +56,29 @@ $hotels = [
 <body class="bg-primary my_heigt-100">
   <h1 class="text-center fw-bold pt-5">Hotel</h1>
   <div class="container d-flex flex-wrap align-items-center h-75">
-    <?php foreach($hotels as $hotel): ?>
+    <?php
+    foreach($hotels as $hotel): 
+    if($only_park === $hotel['parking'] || $only_park === false):
+    if($hotel['vote'] >= $min_vote):
+    ?>
       <div class="card mx-5" style="width: 18rem;">
         <div class="card-body">
-          <h5 class="card-title"><?php echo $hotel['name'] ?></h5>
+          <h5 class="card-title fw-bold"><?php echo $hotel['name'] ?></h5>
           <h6 class="card-subtitle mb-2 text-body-secondary"><?php echo $hotel['description'] ?></h6>
           <?php if($hotel['parking']): ?>
             <p class="card-text">Parcheggio: Si</p>
             <?php else: ?>
               <p class="card-text">Parcheggio: No</p>
           <?php endif; ?>
-          <p class="card-text">Voto medio: <?php echo $hotel['vote'] ?></p>
+          <p class="card-text">Voto medio: <?php echo $hotel['vote'] ?>/5</p>
           <p class="card-text">Distanza dal centro: <?php echo $hotel['distance_to_center'] ?>min</p>
         </div>
       </div>
-    <?php endforeach; ?>
+    <?php 
+    endif;
+    endif;
+    endforeach; 
+    ?>
   </div>
 </body>
 </html>

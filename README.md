@@ -22,5 +22,10 @@ Dopo aggiungete Bootstrap e mostrate le informazioni con una tabella (o se prefe
 **NOTA:** deve essere possibile utilizzare entrambi i filtri contemporaneamente (es. ottenere una lista con hotel che dispongono di parcheggio e che hanno un voto di tre stelle o superiore)
 Se non viene specificato nessun filtro, visualizzare come in precedenza tutti gli hotel.
 
-**NOTA:** deve essere possibile utilizzare entrambi i filtri contemporaneamente (es. ottenere una lista con hotel che dispongono di parcheggio e che hanno un voto di tre stelle o superiore)
-Se non viene specificato nessun filtro, visualizzare come in precedenza tutti gli hotel.
+## Svolgimento
+
+1. Salvare i dati nel file php.
+2. Ciclare l'array per stampare le info, con un foreach.
+3. Dare un minimo di style.
+4. Aggiunger i due parametri per filtrare gli hotel con due if.
+5. Aggiungere un form inizziale che chiede se si vogliono visualizzare tutti gli hotel o se si vuole filtrarli in base a se hanno o no il parcheggio e se si vuole inserire un voto minimo da rispettare.
