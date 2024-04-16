@@ -71,7 +71,7 @@ $hotels = [
               <p class="card-text">Parcheggio: No</p>
           <?php endif; ?>
           <p class="card-text">Voto medio: <?php echo $hotel['vote'] ?>/5</p>
-          <p class="card-text">Distanza dal centro: <?php echo $hotel['distance_to_center'] ?>min</p>
+          <p class="card-text">Distanza dal centro: <?php echo $hotel['distance_to_center'] ?>km</p>
         </div>
       </div>
     <?php 
